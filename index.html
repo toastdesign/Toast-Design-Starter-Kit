@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>DevTips Starter Kit</title>
+  <title>Toast Design Starter Kit</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
@@ -9,71 +9,33 @@
 </head>
 <body>
 
-<div class="page-home">
+<div class="page-home container container--full-width">
 
-  <section>
-    <h1 class="page-title">DevTips<br>Starter Kit</h1>
-    <p>Ground zero for your next project.</p>
+  <div class="grid">
+  <div class="grid__col grid__col--3-of-12">
+    This column will behave like a 1-of-2 column under the medium breakpoint and the small breakpoint.
+  </div>
 
-    <a href="https://github.com/DevTips/DevTips-Starter-Kit/archive/master.zip" class="button button-download">Download Now</a>
+  <div class="grid__col grid__col--3-of-12">
+    This column aligns to the bottom of its row.
+  </div>
 
-    <a class="fork-tag" href="https://github.com/DevTips/DevTips-Starter-Kit">Fork Me on GitHub</a>
+  <div class="grid__col grid__col--3-of-12">
+    This column aligns to the middle of its row.
+  </div>
 
-  </section>
+  <div class="grid__col grid__col--3-of-12">
+    This column is centered and alone in its row.
+  </div>
 
-  <section>
+  <div class="grid__col grid__col--6-of-12">
+    1 This column comes first in the DOM, but appears last in its row.
+  </div>
 
-    <article>
-      <h4>Watch the Video</h4>
-      <div class="flex-video-wrap">
-        <div class="flex-video">
-          <iframe src="https://www.youtube.com/embed/F3u7whqIxrc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <p>Brought to you by</p>
-      <div class="name-lockup">
-        <img class="avatar" src="https://yt3.ggpht.com/-47U43a3eNW0/AAAAAAAAAAI/AAAAAAAAAAA/fWgb7mKcn6k/s176-c-k-no/photo.jpg">
-        <div class="name">
-          <strong>Travis Neilson</strong>
-          <br>
-          <a href="https://twitter.com/DevTipsShow">@DevTipsShow</a>
-        </div>
-      </div>
-  </article>
-
-  </section>
-
-  <pre>
-    DevTips-Starter-Kit
-    | -- assets/
-    |   | -- css/
-    |   |   | -- 1-tools/
-    |   |   |   | -- bourbon/
-    |   |   |   | -- fonts.sass
-    |   |   |   | -- normalize.sass
-    |   |   |   | -- vars.sass
-    |   |   | -- 2-basics/
-    |   |   |   | -- body-elements.sass
-    |   |   |   | -- links.sass
-    |   |   |   | -- selection-colors.sass
-    |   |   |   | -- typography.sass
-    |   |   | -- 3-modules/
-    |   |   |   | -- example-module.sass
-    |   |   |   | -- example-module.sass
-    |   |   | -- 4-pages/
-    |   |   |   | -- example-page.sass
-    |   |   | -- main.sass
-    |   | -- js/
-    |   |   | -- jquery.js
-    |   |   | -- functions.js
-    |   | -- img/
-    | -- favicon.ico
-    | -- readme.md
-    | -- index.html
-  </pre>
+  <div class="grid__col grid__col--6-of-12">
+    2 This column appears last in the DOM, but appears first in its row.
+  </div>
+</div>
 
 </div>
 

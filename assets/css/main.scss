@@ -1,30 +1,33 @@
 // 1 - SETTINGS
 // Global variables, such as brand colours, configs etc
-@import '1-settings/settings'
+@import '1-settings/settings';
 
 // 2 - TOOLS
 // Globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
-@import '2-tools/tools'
+@import '2-tools/mixins';
 
 // 3 - GENERIC
 // Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
-@import '3-generic/generic'
+@import '3-generic/normalize';
+@import '3-generic/reset';
 
 // 4 - ELEMENTS
 // Styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
-@import '4-elements/elements'
+@import '4-elements/elements';
 
 // 5 - BLOCKS
 // Class-based selectors which define undecorated design patterns, for example media object known from OOCSS
-@import '5-objects/objects'
+@import '5-objects/container';
+@import '5-objects/grid';
+
 
 // 6 - COMPONENTS
 // Specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
-@import '6-components/components'
+@import '6-components/components';
 
 // 7 - TRUMPS
 // Utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-@import '7-trumps/trumps'
+@import '7-trumps/trumps';
 
 
 // Expample 
